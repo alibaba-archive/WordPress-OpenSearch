@@ -1,0 +1,333 @@
+{
+  "tables": {
+    "main": {
+      "object_id": {
+        "name": "object_id",
+        "type": "INT",
+        "is_multi": "0",
+        "is_pk": "1"
+      },
+      "date": {
+        "name": "date",
+        "type": "INT",
+        "is_multi": "0",
+        "is_pk": "0"
+      },
+      "title": {
+        "name": "title",
+        "type": "TEXT",
+        "is_multi": "0",
+        "is_pk": "0"
+      },
+      "content": {
+        "name": "content",
+        "type": "TEXT",
+        "is_multi": "0",
+        "is_pk": "0"
+      },
+      "excerpt": {
+        "name": "excerpt",
+        "type": "TEXT",
+        "is_multi": "0",
+        "is_pk": "0"
+      },
+      "slug": {
+        "name": "slug",
+        "type": "TEXT",
+        "is_multi": "0",
+        "is_pk": "0"
+      },
+      "modified": {
+        "name": "modified",
+        "type": "INT",
+        "is_multi": "0",
+        "is_pk": "0"
+      },
+      "parent": {
+        "name": "parent",
+        "type": "INT",
+        "is_multi": "0",
+        "is_pk": "0"
+      },
+      "menu_order": {
+        "name": "menu_order",
+        "type": "INT",
+        "is_multi": "0",
+        "is_pk": "0"
+      },
+      "type": {
+        "name": "type",
+        "type": "TEXT",
+        "is_multi": "0",
+        "is_pk": "0"
+      },
+      "permalink": {
+        "name": "permalink",
+        "type": "TEXT",
+        "is_multi": "0",
+        "is_pk": "0"
+      },
+      "featured_image": {
+        "name": "featured_image",
+        "type": "TEXT",
+        "is_multi": "0",
+        "is_pk": "0"
+      },
+      "author_id": {
+        "name": "author_id",
+        "type": "INT",
+        "is_multi": "0",
+        "is_pk": "0"
+      },
+      "author": {
+        "name": "author",
+        "type": "TEXT",
+        "is_multi": "0",
+        "is_pk": "0"
+      },
+      "category": {
+        "name": "category",
+        "type": "TEXT",
+        "is_multi": "0",
+        "is_pk": "0"
+      },
+      "tag": {
+        "name": "tag",
+        "type": "TEXT",
+        "is_multi": "0",
+        "is_pk": "0"
+      }
+    }
+  },
+  "join": [],
+  "master": "main",
+  "plugin_info": {
+    "main": {
+      "title": {
+        "name": "html_remove",
+        "origin": "title",
+        "origin_type": "TEXT",
+        "target": "title",
+        "target_type": "TEXT",
+        "params": []
+      },
+      "content": {
+        "name": "html_remove",
+        "origin": "content",
+        "origin_type": "TEXT",
+        "target": "content",
+        "target_type": "TEXT",
+        "params": []
+      },
+      "excerpt": {
+        "name": "html_remove",
+        "origin": "excerpt",
+        "origin_type": "TEXT",
+        "target": "excerpt",
+        "target_type": "TEXT",
+        "params": []
+      },
+      "slug": {
+        "name": "html_remove",
+        "origin": "slug",
+        "origin_type": "TEXT",
+        "target": "slug",
+        "target_type": "TEXT",
+        "params": []
+      },
+      "author": {
+        "name": "html_remove",
+        "origin": "author",
+        "origin_type": "TEXT",
+        "target": "author",
+        "target_type": "TEXT",
+        "params": []
+      },
+      "category": {
+        "name": "html_remove",
+        "origin": "category",
+        "origin_type": "TEXT",
+        "target": "category",
+        "target_type": "TEXT",
+        "params": []
+      },
+      "tag": {
+        "name": "html_remove",
+        "origin": "tag",
+        "origin_type": "TEXT",
+        "target": "tag",
+        "target_type": "TEXT",
+        "params": []
+      }
+    }
+  },
+  "index_fields": {
+    "object_id": {
+      "name": "object_id",
+      "type": "INT64",
+      "is_filter": "0",
+      "is_search": "1",
+      "index_to": [
+        "id"
+      ],
+      "is_display": "1",
+      "is_aggregate": "0"
+    },
+    "date": {
+      "name": "date",
+      "type": "INT32",
+      "is_filter": "1",
+      "is_search": "0",
+      "index_to": [],
+      "is_display": "1",
+      "is_aggregate": "1"
+    },
+    "title": {
+      "name": "title",
+      "type": "TEXT",
+      "is_filter": "0",
+      "is_search": "1",
+      "index_to": [
+        "default",
+        "title"
+      ],
+      "is_display": "1",
+      "is_aggregate": "0"
+    },
+    "content": {
+      "name": "content",
+      "type": "TEXT",
+      "is_filter": "0",
+      "is_search": "1",
+      "index_to": [
+        "default",
+        "content"
+      ],
+      "is_display": "1",
+      "is_aggregate": "0"
+    },
+    "excerpt": {
+      "name": "excerpt",
+      "type": "TEXT",
+      "is_filter": "0",
+      "is_search": "1",
+      "index_to": [
+        "default",
+        "excerpt"
+      ],
+      "is_display": "1",
+      "is_aggregate": "0"
+    },
+    "slug": {
+      "name": "slug",
+      "type": "TEXT",
+      "is_filter": "0",
+      "is_search": "1",
+      "index_to": [
+        "default",
+        "slug"
+      ],
+      "is_display": "1",
+      "is_aggregate": "0"
+    },
+    "modified": {
+      "name": "modified",
+      "type": "INT32",
+      "is_filter": "1",
+      "is_search": "0",
+      "index_to": [],
+      "is_display": "1",
+      "is_aggregate": "1"
+    },
+    "parent": {
+      "name": "parent",
+      "type": "INT32",
+      "is_filter": "1",
+      "is_search": "0",
+      "index_to": [],
+      "is_display": "1",
+      "is_aggregate": "1"
+    },
+    "menu_order": {
+      "name": "menu_order",
+      "type": "INT32",
+      "is_filter": "1",
+      "is_search": "0",
+      "index_to": [],
+      "is_display": "1",
+      "is_aggregate": "1"
+    },
+    "type": {
+      "name": "type",
+      "type": "TEXT",
+      "is_filter": "0",
+      "is_search": "0",
+      "index_to": [],
+      "is_display": "1",
+      "is_aggregate": "0"
+    },
+    "permalink": {
+      "name": "permalink",
+      "type": "TEXT",
+      "is_filter": "0",
+      "is_search": "0",
+      "index_to": [],
+      "is_display": "1",
+      "is_aggregate": "0"
+    },
+    "featured_image": {
+      "name": "featured_image",
+      "type": "TEXT",
+      "is_filter": "0",
+      "is_search": "0",
+      "index_to": [],
+      "is_display": "1",
+      "is_aggregate": "0"
+    },
+    "author_id": {
+      "name": "author_id",
+      "type": "INT32",
+      "is_filter": "1",
+      "is_search": "0",
+      "index_to": [],
+      "is_display": "1",
+      "is_aggregate": "1"
+    },
+    "author": {
+      "name": "author",
+      "type": "TEXT",
+      "is_filter": "0",
+      "is_search": "1",
+      "index_to": [
+        "default",
+        "author"
+      ],
+      "is_display": "1",
+      "is_aggregate": "0"
+    },
+    "category": {
+      "name": "category",
+      "type": "TEXT",
+      "is_filter": "0",
+      "is_search": "1",
+      "index_to": [
+        "default",
+        "category"
+      ],
+      "is_display": "1",
+      "is_aggregate": "0"
+    },
+    "tag": {
+      "name": "tag",
+      "type": "TEXT",
+      "is_filter": "0",
+      "is_search": "1",
+      "index_to": [
+        "default",
+        "tag"
+      ],
+      "is_display": "1",
+      "is_aggregate": "0"
+    }
+  }
+}

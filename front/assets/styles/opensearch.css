@@ -1,0 +1,4 @@
+#content .entry-title em, #content .entry-summary em, #content .entry-content em, #content .entry-meta em {
+	color: #CC0000;
+    font-style: normal;
+}

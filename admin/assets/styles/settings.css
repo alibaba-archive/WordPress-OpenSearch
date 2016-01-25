@@ -1,0 +1,399 @@
+/* Layout helpers
+----------------------------------*/
+#opSouSettings .ui-helper-hidden {
+	display: none;
+}
+#opSouSettings .ui-helper-hidden-accessible {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+#opSouSettings .ui-helper-reset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	line-height: 1.3;
+	text-decoration: none;
+	font-size: 100%;
+	list-style: none;
+}
+#opSouSettings .ui-helper-clearfix:before,
+#opSouSettings .ui-helper-clearfix:after {
+	content: "";
+	display: table;
+	border-collapse: collapse;
+}
+#opSouSettings .ui-helper-clearfix:after {
+	clear: both;
+}
+#opSouSettings .ui-helper-clearfix {
+	min-height: 0; /* support: IE7 */
+}
+#opSouSettings .ui-helper-zfix {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	opacity: 0;
+	filter:Alpha(Opacity=0);
+}
+
+#opSouSettings .ui-front {
+	z-index: 100;
+}
+
+
+/* Interaction Cues
+----------------------------------*/
+#opSouSettings .ui-state-disabled {
+	cursor: default !important;
+}
+
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+#opSouSettings .ui-icon {
+	display: block;
+	text-indent: -99999px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+}
+
+
+/* Misc visuals
+----------------------------------*/
+
+/* Overlays */
+#opSouSettings .ui-widget-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+#opSouSettings .ui-progressbar {
+	height: 2em;
+	text-align: left;
+	overflow: hidden;
+}
+#opSouSettings .ui-progressbar .ui-progressbar-value {
+	margin: -1px;
+	height: 100%;
+}
+#opSouSettings .ui-progressbar .ui-progressbar-overlay {
+	background: url("images/animated-overlay.gif");
+	height: 100%;
+	filter: alpha(opacity=25);
+	opacity: 0.25;
+}
+#opSouSettings .ui-progressbar-indeterminate .ui-progressbar-value {
+	background-image: none;
+}
+
+/* Component containers
+----------------------------------*/
+
+#opSouSettings .ui-tabs {
+	position: relative;/* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+	padding: .2em;
+}
+#opSouSettings .ui-tabs .ui-tabs-nav {
+	margin: 0;
+	padding: .2em .2em 0;
+}
+#opSouSettings .ui-tabs .ui-tabs-nav li {
+	list-style: none;
+	float: left;
+	position: relative;
+	top: 0;
+	margin: 1px .2em 0 0;
+	border-bottom-width: 0;
+	padding: 0;
+	white-space: nowrap;
+}
+#opSouSettings .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+	float: left;
+	padding: .5em 1em;
+	text-decoration: none;
+}
+#opSouSettings .ui-tabs .ui-tabs-nav li.ui-tabs-active {
+	margin-bottom: -1px;
+	padding-bottom: 1px;
+}
+#opSouSettings .ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor,
+#opSouSettings .ui-tabs .ui-tabs-nav li.ui-state-disabled .ui-tabs-anchor,
+#opSouSettings .ui-tabs .ui-tabs-nav li.ui-tabs-loading .ui-tabs-anchor {
+	cursor: text;
+}
+#opSouSettings .ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor {
+	cursor: pointer;
+}
+#opSouSettings .ui-tabs .ui-tabs-panel {
+	display: block;
+	border-width: 0;
+	padding: 1em 1.4em;
+	background: none;
+}
+
+#opSouSettings .ui-widget {
+	font-family: Lucida Grande,Lucida Sans,Arial,sans-serif;
+	font-size: 1.1em;
+}
+#opSouSettings .ui-widget .ui-widget {
+	font-size: 1em;
+}
+#opSouSettings .ui-widget input,
+#opSouSettings .ui-widget select,
+#opSouSettings .ui-widget textarea,
+#opSouSettings .ui-widget button {
+	font-family: Lucida Grande,Lucida Sans,Arial,sans-serif;
+	font-size: 1em;
+}
+#opSouSettings .ui-widget-content {
+	border: 1px solid #a6c9e2;
+	background: #fcfdfd url("images/ui-bg_inset-hard_100_fcfdfd_1x100.png") 50% bottom repeat-x;
+	color: #222222;
+}
+#opSouSettings .ui-widget-content a {
+	color: #222222;
+}
+#opSouSettings .ui-widget-header {
+	border: 1px solid #4297d7;
+	background: #5c9ccc url("images/ui-bg_gloss-wave_55_5c9ccc_500x100.png") 50% 50% repeat-x;
+	color: #ffffff;
+	font-weight: bold;
+}
+#opSouSettings .ui-widget-header a {
+	color: #ffffff;
+}
+
+/* Interaction states
+----------------------------------*/
+#opSouSettings .ui-state-default,
+#opSouSettings .ui-widget-content .ui-state-default,
+#opSouSettings .ui-widget-header .ui-state-default {
+	border: 1px solid #c5dbec;
+	background: #dfeffc url("images/ui-bg_glass_85_dfeffc_1x400.png") 50% 50% repeat-x;
+	font-weight: bold;
+	color: #2e6e9e;
+}
+#opSouSettings .ui-state-default a,
+#opSouSettings .ui-state-default a:link,
+#opSouSettings .ui-state-default a:visited {
+	color: #2e6e9e;
+	text-decoration: none;
+}
+#opSouSettings .ui-state-hover,
+#opSouSettings .ui-widget-content .ui-state-hover,
+#opSouSettings .ui-widget-header .ui-state-hover,
+#opSouSettings .ui-state-focus,
+#opSouSettings .ui-widget-content .ui-state-focus,
+#opSouSettings .ui-widget-header .ui-state-focus {
+	border: 1px solid #79b7e7;
+	background: #d0e5f5 url("images/ui-bg_glass_75_d0e5f5_1x400.png") 50% 50% repeat-x;
+	font-weight: bold;
+	color: #1d5987;
+}
+#opSouSettings .ui-state-hover a,
+#opSouSettings .ui-state-hover a:hover,
+#opSouSettings .ui-state-hover a:link,
+#opSouSettings .ui-state-hover a:visited,
+#opSouSettings .ui-state-focus a,
+#opSouSettings .ui-state-focus a:hover,
+#opSouSettings .ui-state-focus a:link,
+#opSouSettings .ui-state-focus a:visited {
+	color: #1d5987;
+	text-decoration: none;
+}
+#opSouSettings .ui-state-active,
+#opSouSettings .ui-widget-content .ui-state-active,
+#opSouSettings .ui-widget-header .ui-state-active {
+	border: 1px solid #79b7e7;
+	background: #f5f8f9 url("images/ui-bg_inset-hard_100_f5f8f9_1x100.png") 50% 50% repeat-x;
+	font-weight: bold;
+	color: #e17009;
+}
+#opSouSettings .ui-state-active a,
+#opSouSettings .ui-state-active a:link,
+#opSouSettings .ui-state-active a:visited {
+	color: #e17009;
+	text-decoration: none;
+}
+
+/* Interaction Cues
+----------------------------------*/
+#opSouSettings .ui-state-highlight,
+#opSouSettings .ui-widget-content .ui-state-highlight,
+#opSouSettings .ui-widget-header .ui-state-highlight {
+	border: 1px solid #fad42e;
+	background: #fbec88 url("images/ui-bg_flat_55_fbec88_40x100.png") 50% 50% repeat-x;
+	color: #363636;
+}
+#opSouSettings .ui-state-highlight a,
+#opSouSettings .ui-widget-content .ui-state-highlight a,
+#opSouSettings .ui-widget-header .ui-state-highlight a {
+	color: #363636;
+}
+#opSouSettings .ui-state-error,
+#opSouSettings .ui-widget-content .ui-state-error,
+#opSouSettings .ui-widget-header .ui-state-error {
+	border: 1px solid #cd0a0a;
+	background: #fef1ec url("images/ui-bg_glass_95_fef1ec_1x400.png") 50% 50% repeat-x;
+	color: #cd0a0a;
+}
+#opSouSettings .ui-state-error a,
+#opSouSettings .ui-widget-content .ui-state-error a,
+#opSouSettings .ui-widget-header .ui-state-error a {
+	color: #cd0a0a;
+}
+#opSouSettings .ui-state-error-text,
+#opSouSettings .ui-widget-content .ui-state-error-text,
+#opSouSettings .ui-widget-header .ui-state-error-text {
+	color: #cd0a0a;
+}
+#opSouSettings .ui-priority-primary,
+#opSouSettings .ui-widget-content .ui-priority-primary,
+#opSouSettings .ui-widget-header .ui-priority-primary {
+	font-weight: bold;
+}
+#opSouSettings .ui-priority-secondary,
+#opSouSettings .ui-widget-content .ui-priority-secondary,
+#opSouSettings .ui-widget-header .ui-priority-secondary {
+	opacity: .7;
+	filter:Alpha(Opacity=70);
+	font-weight: normal;
+}
+#opSouSettings .ui-state-disabled,
+#opSouSettings .ui-widget-content .ui-state-disabled,
+#opSouSettings .ui-widget-header .ui-state-disabled {
+	opacity: .35;
+	filter:Alpha(Opacity=35);
+	background-image: none;
+}
+#opSouSettings .ui-state-disabled .ui-icon {
+	filter:Alpha(Opacity=35); /* For IE8 - See #6059 */
+}
+
+
+/* Misc visuals
+----------------------------------*/
+
+/* Corner radius */
+#opSouSettings .ui-corner-all,
+#opSouSettings .ui-corner-top,
+#opSouSettings .ui-corner-left,
+#opSouSettings .ui-corner-tl {
+	border-top-left-radius: 5px;
+}
+#opSouSettings .ui-corner-all,
+#opSouSettings .ui-corner-top,
+#opSouSettings .ui-corner-right,
+#opSouSettings .ui-corner-tr {
+	border-top-right-radius: 5px;
+}
+#opSouSettings .ui-corner-all,
+#opSouSettings .ui-corner-bottom,
+#opSouSettings .ui-corner-left,
+#opSouSettings .ui-corner-bl {
+	border-bottom-left-radius: 5px;
+}
+#opSouSettings .ui-corner-all,
+#opSouSettings .ui-corner-bottom,
+#opSouSettings .ui-corner-right,
+#opSouSettings .ui-corner-br {
+	border-bottom-right-radius: 5px;
+}
+
+/* Overlays */
+#opSouSettings .ui-widget-overlay {
+	background: #aaaaaa url("images/ui-bg_flat_0_aaaaaa_40x100.png") 50% 50% repeat-x;
+	opacity: .3;
+	filter: Alpha(Opacity=30);
+}
+#opSouSettings .ui-widget-shadow {
+	margin: -8px 0 0 -8px;
+	padding: 8px;
+	background: #aaaaaa url("images/ui-bg_flat_0_aaaaaa_40x100.png") 50% 50% repeat-x;
+	opacity: .3;
+	filter: Alpha(Opacity=30);
+	border-radius: 8px;
+}
+
+#opSouSettings #progressBar {
+	width: 400px;
+	height: 22px;
+	border: 1px solid #111;
+	background-color: #292929;
+}
+
+#opSouSettings #progressBar div {
+	height: 100%;
+	color: #fff;
+	text-align: right;
+	line-height: 22px; /* same as #progressBar height if we want text middle aligned */
+	width: 0;
+	background-color: #0099ff;
+}
+
+ #opSouSettings .ui-progressbar {
+	position: relative;
+}
+#opSouSettings .progress-label {
+	position: absolute;
+	left: 5%;
+	top: 4px;
+	font-weight: bold;
+	text-shadow: 1px 1px 0 #fff;
+}
+
+#opSouSettings #opSoutabs.ui-widget-content {
+	border: none;
+	background: none;
+	color: #222222;
+}
+#opSouSettings #opSoutabs .ui-tabs-panel {
+	background: #FFF;
+	border: 1px solid #CCC;
+}
+#opSouSettings #opSoutabs .ui-tabs-nav.ui-widget-header {
+    background: none;
+    border: none;
+    color: #FFFFFF;
+}
+#opSouSettings #opSoutabs .ui-state-default {
+    background: #EEE;
+	border-color: #CCC;
+}
+#opSouSettings #opSoutabs .ui-state-active {
+    background: #FFF;
+    border-color: #CCC;
+}
+#opSouSettings #opSoutabs .ui-state-default a, 
+#opSouSettings #opSoutabs .ui-state-default a:link, 
+#opSouSettings #opSoutabs .ui-state-default a:visited{
+	font-weight: normal;
+	font-size: 14px;
+}
+#opSouSettings #opSoutabs .ui-state-active a, 
+#opSouSettings #opSoutabs .ui-state-active a:link, 
+#opSouSettings #opSoutabs .ui-state-active a:visited{
+	font-weight: bold;
+}
+#opSouSettings #opSoutabs .nav-tab {
+    background: none;
+	border: none;
+}
+#opSouSettings #opSoutabs .nav-tab-active, 
+#opSouSettings #opSoutabs .nav-tab-active:hover {
+    background: none;
+    border: none;
+}
