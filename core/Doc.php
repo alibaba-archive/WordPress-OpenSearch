@@ -212,7 +212,7 @@ class Doc {
 		// Get WP Tags
 		$tags = array();
 		$terms = wp_get_post_terms( $post->ID, 'post_tag' );
-		if( !empty( $terms && is_array($terms) ) ) {
+		if( !empty( $terms ) && is_array( $terms ) ) {
 			foreach ($terms as $key => $value) {
 				if (!empty($value->name)) {
 					$tags[] = $value->name;
@@ -231,7 +231,7 @@ class Doc {
 		// Get WP Categories
 		$categories = array();
 		$terms = wp_get_post_terms( $post->ID, 'category' );
-		if( !empty( $terms && is_array($terms) ) ) {
+		if( !empty( $terms ) && is_array( $terms ) ) {
 			foreach ($terms as $key => $value) {
 				if (!empty($value->name)) {
 					$categories[] = $value->name;
