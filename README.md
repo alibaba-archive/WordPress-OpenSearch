@@ -17,6 +17,7 @@ This plugin make an integration of WordPress and Open Search in an easy way.
 ## Installation
 
 Download the [latest release](http://git.oschina.net/zzqer/WordPress-OpenSearch/repository/archive/master) of this plugin (the file ends with `.zip`).
+Or you just search 'aliyun-wp-opensearch' from 'https://wordpress.org/plugins/' and get this plugin.
 
 Open your WordPress admin dashboard: 
 
